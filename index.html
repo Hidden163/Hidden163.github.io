@@ -254,7 +254,7 @@ Spacedots = new function(){
       p = enemies[i];
       
       if( playing ) {
-        if( player.boost > 0 && p.distanceTo( player.position ) < ( ( player.size * 4 ) + p.size ) * 0.5 ) {
+        if( player.boost > 3 && p.distanceTo( player.position ) < ( ( player.size * 4 ) + p.size ) * 0.5 ) {
           createParticles( p.position, 10 );
           enemies.splice( i, 1 );
           i --;
