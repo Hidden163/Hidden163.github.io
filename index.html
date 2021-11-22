@@ -209,7 +209,7 @@ Spacedots = new function(){
       
       player.boost = Math.max( player.boost - 1, 0 );
       
-      if( player.boost > 0 && ( player.boost > 100 || player.boost % 3 != 0 ) ) {
+      if( player.boost > 0 && ( player.boost > 500 || player.boost % 3 != 0 ) ) {
         context.beginPath();
         context.fillStyle = '#167a66';//couleur interne au stade augmenter
         context.strokeStyle = 'yellow';//couleur de la bordure au stade augmenter
